@@ -8,6 +8,8 @@ import { useRecoilState, } from 'recoil';
 import { usersState } from '../Components/Atoms/Atoms';
 import { v4 } from 'uuid'
 import ModalUpdate from '../Components/ModalUpdate/Index'
+import SendIcon from '@mui/icons-material/Send';
+
 
 
 
@@ -60,7 +62,7 @@ const Home = () => {
           <FormInput onChange={(e) => setnom(e.target.value)} label="Nom" value={nom} />
           <FormInput onChange={(e) => setprenom(e.target.value)} label="Prenom" value={prenom} />
           <FormInput onChange={(e) => setoffre(e.target.value)} label="Offre" value={offre} />
-          <Button onClick={send}>Send</Button>
+          <Button onClick={send} icon={<SendIcon />} >Send</Button>
 
 
         </div>

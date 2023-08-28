@@ -5,6 +5,8 @@ import Modal from '@mui/material/Modal';
 import FormInput from '../FormInput'
 import Button from '../Button/Index';
 import './index.scss'
+import CloseIcon from '@mui/icons-material/Close';
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 
 
 const style = {
@@ -46,8 +48,8 @@ export default function Index(props) {
 					</Typography>
 					<div className="btn">
 						<Button>Save</Button>
-						<Button>Delete</Button>
-						<Button onClick= {props.handleClose}>Close</Button>
+						<Button icon={<DeleteForeverIcon/>}>Delete</Button>
+						<Button onClick= {props.handleClose} icon={<CloseIcon/>}>Close</Button>
 						
 					</div>
 				</Box>
